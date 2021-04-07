@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>PWAs</title>
+		<link rel="stylesheet" href="./dist/reset.css">
+		<link rel="stylesheet" href="./dist/reveal.css">
+		<link rel="stylesheet" href="./dist/theme/beige.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="./plugin/highlight/monokai.css" id="highlight-theme">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <style>
+            h2 {
+                font-size: 122px !important;
+            }
+	    .tlp {
+                position: fixed;
+                bottom: 25px;
+                left: 25px;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <!-- Intro slide -->
+                    <h2>Introduction to progressive web apps</h2>
+                    <!-- <br /> -->
+                        <p style="font-size: 40px;">Let's build a mobile app without building a mobile app :)</p>
+                    <!-- <div>
+                        <a style="padding: 20px;" target="_blank" href="https://www.linkedin.com/in/madhavbahl/"><i class="fab fa-linkedin-in"></i></a>
+                        <a style="padding: 20px;" target="_blank" href="https://www.instagram.com/theleanprogrammer"><i class="fab fa-instagram"></i></a>
+                        <a style="padding: 20px;" target="_blank" href="http://github.com/MadhavBahlMD"><i class="fab fa-github"></i></a>
+                        <a style="padding: 20px;" target="_blank" href="http://madhavbahl.tech/"><i class="fas fa-globe"></i></a>
+                        <a style="padding: 20px;" target="_blank" href="https://medium.com/@madhavbahl10"><i class="fab fa-medium"></i></a>
+                    </div> -->
+                </section>
+                
+
+                <!-- What are PWA -->
+                <section>
+                    <section>
+                        <h1>What is a PWA?</h1>
+                    </section>
+                    <section>
+                        <p>Rule of thumb?</p>
+                        <h3>Built for web, acts like native app</h3>
+                        <p style="font-size: 16px;" >Of course, by native I mean - android, ios, windows etc..</p>
+                    </section>
+                    <section>
+                        <h3>A Formal Definition...</h3>
+
+                        <p><b>Progressively</b> enhancing the web apps to look and feel like native apps, and allowing features like - </p>
+                        <ul>
+                            <li>Accessing hardware - Camera, Mic, etc.</li>
+                            <li>Sensors? Location? GPS?</li>
+                            <li>Accessing Storage?</li>
+                            <li>Push Notifications</li>
+                            <li>Working Offline?</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Why "Progressive"?</h3>
+                        <img src="./img/1.PNG" alt="">
+                        <br>
+                        <a style="font-size: 12px;" href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Introduction">Read More on MDN Docs</a>
+                    </section>
+                    <section>
+                        <h3>Let's go back to the english word</h3>
+                        <img src="./img//2.PNG" alt="">
+                    </section>
+                    <section>
+                        <h3>Improving Experience "Progressively"</h3>
+                        <img src="./img/3.PNG" alt="">
+                        <br>
+                        <a style="font-size: 12px;" href="https://digiday.com/media/wtf-progressive-web-apps/">Read More</a>
+                    </section>
+                </section>
+
+                <!-- Why PWAs? -->
+                <section>
+                    <section>
+                        <h1>But why do we need PWAs?</h1>
+                        <p>We already have Native apps, don't we?</p>
+                    </section>
+                    <section>
+                        <h1>Moreover!</h1>
+                        <p style="font-size: 25px;"><a href="https://www.comscore.com/Insights/Presentations-and-Whitepapers/2015/The-2015-US-Mobile-App-Report">comScore Mobile Metrix - 2015</a> report says that </p>
+                        <ul style="font-size: 25px;">
+                            <li>Total activity on smartphones and tablets accounts for 62 percent of digital media time spent</li>
+                            <li>87% of usage is Native Apps and only 13% of usage is on Mobile Web!</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Ask yourself!</h3>
+                        <ul>
+                            <li>How many times do you go to windows app store to install a new app?</li>
+                            <li>How many times do you go to play store to download a new app?</li>
+                            <li>Even if you download new apps, do you use them religiously?</li>
+                        </ul>
+                        <p>The fact is, that most users spend most of their "Native Apps" time on top 3 native apps!</p>
+                    </section>
+                    <section>
+                        <p>But why such a huge number for Native apps?</p>
+                        <ul>
+                            <li>Push Notifications bring users back</li>
+                            <li>Homescreen icons give easy access</li>
+                            <li>Access native device features like camera makes the app more interesting</li>
+                            <li>Working offline.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Now that's everything that PWAs can handle too!</h3>
+                    </section>
+                </section>
+
+                <section>
+                    <h3>53% of users will abandon a website if it takes longer than 3 seconds to load!</h3>
+                    <p style="float: right; font-size: 16px; margin: 0;"><a href="https://www.marketingdive.com/news/google-53-of-mobile-users-abandon-sites-that-take-over-3-seconds-to-load/426070/#:~:text=New%20research%20by%20Google%20has,seconds%20on%20a%204G%20connection.">- A research by google</a></p>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Now let's finally answer the question!</h1>
+                    </section>
+                    <section>
+                        <h3>Why Progressive Web Apps?</h3>
+                        <ul style="font-size: 32px;">
+                            <li>Built with HTML, CSS, and JavaScript (Web technologies super easy to learn)</li>
+                            <li>No need to learn multiple languages for multiple platform</li>
+                            <li>Install on home screen</li>
+                            <li>Work Reliably over varying networks</li>
+                            <li>Also works offline</li>
+                            <li>Less storage space</li>
+                            <li>Access to most of the native features (Still improving though)</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Remember these 5 things while working on PWA</h3>
+                        <ul style="font-size: 35px;">
+                            <li><b>Responsiveness:</b> Shouldn't break on different screensize</li>
+                            <li><b>Reliable:</b> Load fast and provide offline access</li>
+                            <li><b>Installable:</b> Keep it installable</li>
+                            <li><b>Fast:</b> Should run smoothly over bad networks</li>
+                            <li><b>Engaging:</b>Feel like native apps on mobile devices, have app like interactions, build with the mindset of native app</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <!-- 3 Key points in PWA -->
+			</div>
+		</div>
+
+		<script src="./dist/reveal.js"></script>
+		<script src="./plugin/notes/notes.js"></script>
+		<script src="./plugin/markdown/markdown.js"></script>
+		<script src="./plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
